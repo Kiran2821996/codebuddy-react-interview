@@ -16,17 +16,17 @@ function Forms() {
 
   // Handling form submits
   const handleForm1Submit = values => {
-    setUser({ ...user, ...values });
+    setUser({ ...values });
     setSaveNext1(!saveNext1);
   };
 
   const handleForm2Submit = values => {
-    setUser({ ...user, ...values });
+    setUser({ ...values });
     setSaveNext2(!saveNext2);
   };
 
   const handleFinalSubmit = values => {
-    setUser({ ...user, ...values });
+    setUser({ ...values });
     const requestOptions = {
       method: 'POST',
       body: JSON.stringify(values),
@@ -97,7 +97,7 @@ function Forms() {
                 <label htmlFor="emailId">
                   Email<span>*</span>:
                 </label>
-                <Field name="emailId" type="email" />
+                <Field name="emailId" type="email"  />
               </div>
               <div className="err_msg">
                 <ErrorMessage name="emailId" />
@@ -127,7 +127,7 @@ function Forms() {
         <div className="form form2">
           <Formik
             initialValues={{
-              firstName: '',
+              firstName: ' ',
               lastName: '',
               address: '',
             }}
@@ -146,23 +146,13 @@ function Forms() {
             onSubmit={values => handleForm2Submit(values)}
           >
             <Form>
-              <div className="hide">
-                <label htmlFor="firstName">
-                  First Name<span>*</span>:
-                </label>
-                <Field type="text" name="firstName" />
-                <label htmlFor="firstName">
-                  First Name<span>*</span>:
-                </label>
-                <Field type="text" name="firstName" />
-              </div>
               <div className="form_div">
-                <label htmlFor="firstName">
-                  First Name<span>*</span>:
-                </label>
+                {' '}
+                <label htmlFor="firstName">First Name:</label>
                 <Field type="text" name="firstName" />
               </div>
               <div className="err_msg">
+                {' '}
                 <ErrorMessage name="firstName" />
               </div>
               <div className="form_div">
