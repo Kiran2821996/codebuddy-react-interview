@@ -148,7 +148,7 @@ function Forms() {
             <Form>
               <div className="form_div">
                 {' '}
-                <label htmlFor="firstName">First Name:</label>
+                <label htmlFor="firstName">First Name<span>*</span>:</label>
                 <Field type="text" name="firstName" />
               </div>
               <div className="err_msg">
