@@ -1,0 +1,24 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.item{
+    margin: 2%;
+    width: 18rem;
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr ;
+    }
+  }
+
+

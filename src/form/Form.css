@@ -1,0 +1,41 @@
+
+  .form{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    height: 50%;
+   
+  }
+  .err_msg,span{
+    color:red;
+  }
+  h4{
+    position: absolute;
+    left: 3%;
+    top:50%;
+  }
+  
+  .main{
+    height: 100vh;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  
+  
+  button:hover{
+    cursor: pointer;
+  }
+  
+  .form_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  
+  
+  
+  
